@@ -5,6 +5,7 @@ import ProductGrid from "@/components/ProductGrid";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  console.log("Index component is rendering");
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const handleCategorySelect = (category: string) => {
@@ -12,7 +13,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
+      <div className="p-4">
+        <h1 className="text-2xl font-bold text-black">FashionHub Website</h1>
+        <p className="text-gray-600">Testing if basic content shows up</p>
+      </div>
+      {/* Temporarily commenting out components to test
       <Header
         onCategorySelect={handleCategorySelect}
         selectedCategory={selectedCategory}
@@ -20,6 +26,7 @@ const Index = () => {
       <HeroSection onCategorySelect={handleCategorySelect} />
       <ProductGrid selectedCategory={selectedCategory} />
       <Footer />
+      */}
     </div>
   );
 };
