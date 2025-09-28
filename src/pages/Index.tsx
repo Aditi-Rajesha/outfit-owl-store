@@ -13,12 +13,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="p-4">
-        <h1 className="text-2xl font-bold text-black">FashionHub Website</h1>
-        <p className="text-gray-600">Testing if basic content shows up</p>
-      </div>
-      {/* Temporarily commenting out components to test
+    <div className="min-h-screen bg-background">
       <Header
         onCategorySelect={handleCategorySelect}
         selectedCategory={selectedCategory}
@@ -26,7 +21,6 @@ const Index = () => {
       <HeroSection onCategorySelect={handleCategorySelect} />
       <ProductGrid selectedCategory={selectedCategory} />
       <Footer />
-      */}
     </div>
   );
 };
